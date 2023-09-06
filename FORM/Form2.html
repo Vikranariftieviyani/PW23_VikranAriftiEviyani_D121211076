@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+    <style>
+      body {
+        font-family: 'Times New Roman';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      table {
+        border-collapse: collapse;
+        width: 300px; /* Lebar tabel yang telah ditetapkan */
+        margin: 20px; /* Tambahkan margin untuk tampilan yang lebih baik */
+      }
+      td {
+        border: 1px solid lightblue;
+        padding: 8px;
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="text-right">Text :</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td class="text-right">Password :</td>
+        <td><input type="password"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label>
+            <input type="radio" name="radioGroup" value="radio1" /> Radio 1
+          </label>
+          <label>
+            <input type="radio" name="radioGroup" value="radio2" /> Radio 2
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="Option1" name="Option1" value="Option1" />
+          <label for="Option1">Option 1</label><br />
+          <input type="checkbox" id="Option2" name="Option2" value="Option2" />
+          <label for="Option2">Option 2</label><br />
+          <input type="checkbox" id="Option3" name="Option3" value="Option3" />
+          <label for="Option3">Option 3</label><br />
+        </td>
+      </tr>
+      <tr>
+        <td class="text-right">Combo Box :</td>
+        <td>
+          <select name="options" id="options">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Textarea</td>
+        <td>
+          <textarea name="textarea" id="textarea"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button>Button</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
