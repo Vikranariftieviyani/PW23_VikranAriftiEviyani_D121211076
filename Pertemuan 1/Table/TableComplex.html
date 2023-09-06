@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Sederhana</title>
+    <style>
+        /* CSS untuk tabel */
+        table {
+            width: 100%; /* Lebar tabel 100% dari parent */
+            border-collapse: collapse;
+            border: 1px solid black; /* Menambahkan garis tabel biru */
+        }
+        
+        th, td {
+            border: 1px solid black; /* Menambahkan garis sel biru */
+            padding: 8px;
+            text-align: left;
+            font-family: Arial, sans-serif; /* Mengubah font tulisan */
+        }
+
+        /* Aturan CSS untuk warna latar belakang */
+        th {
+            background-color: greenyellow;
+        }
+
+        /* Aturan CSS untuk sel ganjil */
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* Aturan CSS responsif untuk perangkat seluler */
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%; /* Lebar tabel 100% saat di perangkat seluler */
+            }
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Mulai tabel -->
+    <table>
+        <thead>
+            <!-- Baris kepala tabel -->
+            <tr>
+                <th></th>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+            </tr>
+        </thead>
+        <!-- Bagian tubuh tabel -->
+        <tbody>
+            <!-- Baris 1 dalam tubuh tabel -->
+            <tr>
+                <th>Baris 1</th>
+                <td>Baris 1, Kolom 1</td>
+                <td>Baris 1, Kolom 2</td>
+            </tr>
+            <!-- Baris 2 dalam tubuh tabel -->
+            <tr>
+                <th>Baris 2</th>
+                <td>Baris 2, Kolom 1</td>
+                <td>Baris 2, Kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
